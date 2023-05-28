@@ -7,3 +7,8 @@ async def on_message(message):
         return
     if message.content.startswith('$sovet'):
         await message.channel.send("Сортировать мусор для специальных баков с мусором, Не портить растения, Не шуметь не включать громкую музыку, Не использоватьна природе бытовую химию")
+        
+    else:
+        await message.channel.send(message.content)
+
+client.run("Токен")
